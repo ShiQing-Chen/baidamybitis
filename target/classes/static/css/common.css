@@ -1,0 +1,194 @@
+body{
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+
+
+.btn.btn-orange{
+    background-color: #ffb400;
+    width: 100px;
+    color: white;
+}
+/* 登录按钮 */
+.btn.btn-login{
+    background-color: #ffb400;
+    color: white;
+}
+/* 登录页面整体div居中*/
+.row.login {
+    top: 20%;
+    float: none;
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    position: absolute;
+}
+/* 登录页脚 */
+.login-footer{
+    left: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* 登录输入框icon图标 */
+/*.form-control{display:block;margin-top:15px}*/
+/*#input_userName{background:#fff url(../img/login-loginName.png) no-repeat 2% center;color:#333}*/
+/*#input_password{background:#fff url(../img/login-password.png) no-repeat 2% center;color:#333}*/
+/* 分割线 */
+.divider{
+    background-color: #EEEEEE;
+    height: 1px;
+    width: 100%;
+}
+
+/*nav导航*/
+.bs-docs-nav{
+    z-index: 5;
+}
+.bs-docs-nav .navbar-header .navbar-toggle {
+    border-color: #fff;
+}
+.bs-docs-nav .navbar-header .navbar-toggle:focus,
+.bs-docs-nav .navbar-header .navbar-toggle:hover {
+    background-color: #f9f9f9;border-color: #f9f9f9;
+}
+.navbar{
+    margin-bottom:0;border-width: 0;
+}
+.bs-docs-nav .navbar-brand{
+    line-height: 60px;padding: 0;
+}
+.bs-docs-nav .navbar-toggle {
+    padding: 11px 0;
+}
+.sr-only {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.bs-docs-nav .navbar-toggle .icon-bar {
+    background-color: #563d7c;
+}
+.navbar-toggle .icon-bar {
+    border-radius: 1px;
+    display: block;
+    height: 2px; width: 22px;
+}
+.bs-docs-featurette {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+}
+.navbar-nav li a {
+    line-height: 30px;
+    color:#323333;
+    padding: 15px 25px;
+}
+.navbar-nav li a:hover{
+    color:#00a4ff;
+}
+.navbar-nav .active{
+    background-color: #EEEEEE;
+}
+.navbar-nav .active a{
+    color:#00a4ff !important;
+}
+.carousel-indicators{
+    bottom:6%;
+}
+
+.padding-5{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.margin-5{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.padding-15{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.btn-file {
+    padding: 4px 10px;
+    height: 35px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+        background: #ffb400;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+.btn-file  input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+.btn-file:hover {
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+
+/*radio checkbox*/
+.form-radbox input[type='radio'],
+.form-radbox input[type='checkbox']{display: none;cursor: pointer;}
+.form-radbox input[type='radio']:focus,
+.form-radbox input[type='radio']:active,
+.form-radbox input[type='checkbox']:focus,
+.form-radbox input[type='checkbox']:active {outline: none;}
+.form-radbox input[type='radio'] + label,
+.form-radbox input[type='checkbox'] + label {cursor:pointer;display:inline-block;position:relative;padding-left:25px;margin-right:10px;line-height:20px;}
+.form-radbox input[type='radio'] + label:before,
+.form-radbox input[type='radio'] + label:after,
+.form-radbox input[type='checkbox'] + label:before,
+.form-radbox input[type='checkbox'] + label:after {content: '';
+    font-family: helvetica, sans-serif;display: inline-block;width: 18px;height: 18px;left: 0;bottom: 0;text-align: center;position: absolute;}
+.form-radbox input[type='radio'] + label:before,
+.form-radbox input[type='checkbox'] + label:before {background-color: #fafafa;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-webkit-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+.form-radbox input[type='radio'] + label:after,
+.form-radbox input[type='checkbox'] + label:after {color: #fff;}
+.form-radbox input[type='radio']:checked + label:before,
+.form-radbox input[type='checkbox']:checked + label:before {-moz-box-shadow: inset 0 0 0 10px #00a4ff;-webkit-box-shadow: inset 0 0 0 10px #00a4ff;box-shadow: inset 0 0 0 10px #00a4ff;border-color: #fafafa;}
+.form-radbox input[type='radio'] + label:before {-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 50%;border: 1px solid #c7c7c7;}
+.form-radbox input[type='radio'] + label:hover:after, input[type='radio']:checked + label:after {content: '\2022';font-size: 18px;line-height: 18px;}
+.form-radbox input[type='radio'] + label:hover:after {color: #c7c7c7;}
+.form-radbox input[type='radio']:checked + label:after,
+.form-radbox input[type='radio']:checked + label:hover:after {color: #fff;}
+.form-radbox input[type='checkbox'] + label:before {-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border: 1px solid #c7c7c7;}
+.form-radbox input[type='checkbox'] + label:hover:after,
+.form-radbox input[type='checkbox']:checked + label:after {content: "\2713";font-size: 14px;line-height: 18px;}
+.form-radbox input[type='checkbox'] + label:hover:after {color: #c7c7c7;}
+.form-radbox input[type='checkbox']:checked + label:after,
+.form-radbox input[type='checkbox']:checked + label:hover:after {color: #fff;}
+
+.form-radbox input[type='radio'][disabled] + label:before,
+.form-radbox input[type='checkbox'][disabled] + label:before{background-color:#e8e8e8;}
+.form-radbox input[type='radio'][disabled]:checked + label:before,
+.form-radbox input[type='checkbox'][disabled]:checked + label:before{-moz-box-shadow: inset 0 0 0 10px #ccc;-webkit-box-shadow: inset 0 0 0 10px #ccc;box-shadow: inset 0 0 0 10px #ccc;;border-color: #ccc;}
