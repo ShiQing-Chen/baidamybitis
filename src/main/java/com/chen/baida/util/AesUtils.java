@@ -1,6 +1,6 @@
 package com.chen.baida.util;
 
-import com.chen.baida.exception.DinSmoothRuntimeException;
+import com.chen.baida.exception.ChenRuntimeException;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
@@ -12,7 +12,8 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  * AES加解密工具
- *
+ * @author ShiQing_Chen 2018-12-06
+ * @since 0.0.1
  */
 public class AesUtils {
 
@@ -30,7 +31,7 @@ public class AesUtils {
      */
     public static byte[] encrypt(byte[] key, byte[] plainText) {
         if(key==null || key.length==0){
-            throw new DinSmoothRuntimeException("空的参数 key");
+            throw new ChenRuntimeException("空的参数 key");
         }
 
         try {
@@ -40,7 +41,7 @@ public class AesUtils {
 
             return cipher.doFinal(plainText);
         } catch (NoSuchAlgorithmException | InvalidKeyException | NoSuchPaddingException | BadPaddingException | IllegalBlockSizeException e) {
-            throw new DinSmoothRuntimeException("加密发生错误",e);
+            throw new ChenRuntimeException("加密发生错误",e);
         }
     }
 
@@ -51,7 +52,7 @@ public class AesUtils {
      */
     public static byte[] decrypt(byte[] key, byte[] cipherText) {
         if(key==null || key.length==0){
-            throw new DinSmoothRuntimeException("空的参数 key");
+            throw new ChenRuntimeException("空的参数 key");
         }
         try {
             SecretKeySpec secretKey = new SecretKeySpec(key, ALGORITHM);
@@ -60,7 +61,7 @@ public class AesUtils {
 
             return cipher.doFinal(cipherText);
         } catch (NoSuchAlgorithmException | InvalidKeyException | NoSuchPaddingException | BadPaddingException | IllegalBlockSizeException e) {
-            throw new DinSmoothRuntimeException("解密发生错误",e);
+            throw new ChenRuntimeException("解密发生错误",e);
         }
     }
 

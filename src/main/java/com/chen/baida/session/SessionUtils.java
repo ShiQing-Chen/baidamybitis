@@ -6,7 +6,8 @@ import org.springframework.web.util.WebUtils;
 import javax.servlet.http.HttpServletRequest;
 
 /**Session工具类, 与Session相关的常量等
- * Created by HanHongmin on 16/3/30.
+ * @author ShiQing_Chen 2018-12-06
+ * @since 0.0.1
  */
 public class SessionUtils {
     private static final String USER_IN_SESSION = "curUser";// 以后改成curUser

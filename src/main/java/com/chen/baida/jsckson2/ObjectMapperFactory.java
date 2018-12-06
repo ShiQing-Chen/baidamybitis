@@ -11,7 +11,7 @@ import java.util.Date;
 
 /**
  * jackson2的工厂类
- * @author HanHongmin
+ * @author ShiQing_Chen 2018-12-06
  * @since 0.0.1
  */
 public class ObjectMapperFactory {

@@ -1,6 +1,6 @@
 package com.chen.baida.sms;
 
-import com.chen.baida.exception.DinSmoothRuntimeException;
+import com.chen.baida.exception.ChenRuntimeException;
 import com.chen.baida.jsckson2.ObjectMapperFactory;
 import com.chen.baida.sms.dto.*;
 import com.chen.baida.util.AesUtils;
@@ -95,7 +95,7 @@ public class SmsSender {
     @SuppressWarnings("unused")
     public MessageVo sendBatchOnly(String content, String... mobiles){
         if(mobiles==null||mobiles.length>500){
-            throw new DinSmoothRuntimeException("请检查批量发送的手机号数量");
+            throw new ChenRuntimeException("请检查批量发送的手机号数量");
         }
         String signedContent = config.getSign() + content;
         SmsBatchOnlyRequest request = new SmsBatchOnlyRequest();
@@ -118,7 +118,7 @@ public class SmsSender {
      */
     public MessageVo sendBatchOnly(String content, List<String> mobiles){
         if(CollectionUtils.isEmpty(mobiles)||mobiles.size()>500){
-            throw new DinSmoothRuntimeException("请检查批量发送的手机号数量");
+            throw new ChenRuntimeException("请检查批量发送的手机号数量");
         }
         String signedContent = config.getSign() + content;
         SmsBatchOnlyRequest request = new SmsBatchOnlyRequest();
@@ -143,7 +143,7 @@ public class SmsSender {
     @SuppressWarnings("unused")
     public MessageVo sendPersonality(SmsIdAndMobileAndContent... mobiles){
         if(mobiles==null||mobiles.length>500){
-            throw new DinSmoothRuntimeException("请检查批量发送的手机号数量");
+            throw new ChenRuntimeException("请检查批量发送的手机号数量");
         }
         for(SmsIdAndMobileAndContent siamac:mobiles){
             siamac.setContent(config.getSign()+siamac.getContent());
@@ -183,7 +183,7 @@ public class SmsSender {
             return AesUtils.encrypt(config.getSecretKey().getBytes(),jsonByte);
         } catch (JsonProcessingException e) {
             LOGGER.error("Json 处理异常", e);
-            throw new DinSmoothRuntimeException(e);
+            throw new ChenRuntimeException(e);
         }
     }
 
@@ -210,7 +210,7 @@ public class SmsSender {
             return new String(resultPlain);
         } catch (IOException e) {
             LOGGER.error("请求亿美接口异常", e);
-            throw new DinSmoothRuntimeException(e);
+            throw new ChenRuntimeException(e);
         }
     }
 }

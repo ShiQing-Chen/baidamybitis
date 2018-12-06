@@ -1,6 +1,5 @@
 package com.chen.baida.config;
 
-import com.chen.baida.interceptor.QrSecurityHandlerInterceptor;
 import com.chen.baida.interceptor.SecurityHandlerInterceptor;
 import com.chen.baida.session.SharedUserArgumentResolver;
 import org.slf4j.Logger;
@@ -15,7 +14,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import java.util.List;
 
 /**
- * @author HanHongmin 2017-10-31
+ * @author ShiQing_Chen 2018-12-06
+ * @since 0.0.1
  */
 @Configuration
 public class DispatcherConfig extends WebMvcConfigurerAdapter {
@@ -26,10 +26,6 @@ public class DispatcherConfig extends WebMvcConfigurerAdapter {
         return new SecurityHandlerInterceptor();
     }
 
-    @Bean
-    public QrSecurityHandlerInterceptor qrSecurityHandlerInterceptor(){
-        return new QrSecurityHandlerInterceptor();
-    }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
@@ -41,12 +37,6 @@ public class DispatcherConfig extends WebMvcConfigurerAdapter {
             interceptorRegistration.excludePathPatterns(exUrl);
         }
 
-        //拦截扫码，没扫过的需要填写用户联系信息
-        QrSecurityHandlerInterceptor qrInterceptor = qrSecurityHandlerInterceptor();
-        InterceptorRegistration qrRegistration = registry.addInterceptor(qrInterceptor);
-        for(String includeUrl:QrSecurityHandlerInterceptor.URL_INCLUDE_LIST){
-            qrRegistration.addPathPatterns(includeUrl);
-        }
     }
 
     @Bean

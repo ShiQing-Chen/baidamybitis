@@ -15,13 +15,13 @@ import java.util.Map;
 import java.util.Properties;
 
 /**
- * @author HanHongmin 2017-12-13
+ * @author ShiQing_Chen 2018-12-06
  * @since 0.0.1
  */
 @Configuration
 public class FreemarkerConfig extends FreeMarkerAutoConfiguration.FreeMarkerWebConfiguration {
     private static final Logger LOGGER = LoggerFactory.getLogger(FreemarkerConfig.class);
-    private static final String SYSTEM_TITLE="课程帮活动管理系统";
+    private static final String SYSTEM_TITLE="********管理系统";
 
     @Value("${build.version}")
     private String buildVersion;

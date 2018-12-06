@@ -5,7 +5,7 @@
 
     <groupId>com.chen</groupId>
     <artifactId>baida</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
 
     <name>baida</name>

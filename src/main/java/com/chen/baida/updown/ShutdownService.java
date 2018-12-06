@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.DisposableBean;
 
 /**
- * @author HanHongmin 2018-01-24
+ * @author ShiQing_Chen 2018-12-06
  * @since 0.0.1
  */
 public class ShutdownService implements DisposableBean {

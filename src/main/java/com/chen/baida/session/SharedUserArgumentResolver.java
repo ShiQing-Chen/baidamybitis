@@ -8,8 +8,8 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 
 /**
  * 支持将SharedUser 作为controller 参数直接使用
- * @author HanHongmin
- * @since 5.1.0
+ * @author ShiQing_Chen 2018-12-06
+ * @since 0.0.1
  */
 public class SharedUserArgumentResolver implements HandlerMethodArgumentResolver {
 

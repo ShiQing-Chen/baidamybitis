@@ -1,6 +1,6 @@
 package com.chen.baida.util;
 
-import com.chen.baida.exception.DinSmoothRuntimeException;
+import com.chen.baida.exception.ChenRuntimeException;
 import com.chen.baida.jsckson2.ObjectMapperFactory;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;
@@ -38,9 +38,10 @@ import java.util.List;
 import java.util.Map;
 
 /**Http工具
- * @author HanHongmin 2018-01-24
+ * @author ShiQing_Chen 2018-12-06
  * @since 0.0.1
  */
+
 public class HttpClientUtils {
     private static final Logger LOGGER = LoggerFactory.getLogger(HttpClientUtils.class);
     private static PoolingHttpClientConnectionManager cm = null;
@@ -85,7 +86,7 @@ public class HttpClientUtils {
                     .setDefaultRequestConfig(defaultRequestConfig)
                     .build();
         } catch (NoSuchAlgorithmException | KeyStoreException | KeyManagementException e) {
-            throw new DinSmoothRuntimeException(e);
+            throw new ChenRuntimeException(e);
         }
     }
 

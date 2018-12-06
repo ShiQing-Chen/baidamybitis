@@ -14,7 +14,7 @@ import javax.servlet.MultipartConfigElement;
 import java.beans.PropertyVetoException;
 
 /**
- * @author HanHongmin 2018-01-24
+ * @author ShiQing_Chen 2018-12-06
  * @since 0.0.1
  */
 @Configuration

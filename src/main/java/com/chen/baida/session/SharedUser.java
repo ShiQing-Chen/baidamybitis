@@ -3,9 +3,9 @@ package com.chen.baida.session;
 import java.util.Objects;
 
 /**
- * 共享用户用的，存放在session-redis 中的对象<br/>
- * 注意：和ecourse 的不一样
- * @author HanHongmin 2017-11-01
+ * 共享用户用的，存放在session-redis 中的对象
+ * @author ShiQing_Chen 2018-12-06
+ * @since 0.0.1
  */
 public class SharedUser {
 

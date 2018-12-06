@@ -7,7 +7,7 @@ import java.net.*;
 import java.util.Enumeration;
 
 /**
- * @author HanHongmin 2017-07-07
+ * @author ShiQing_Chen 2018-12-06
  */
 public class ServerInfoUtils {
     private static final Logger LOGGER = LoggerFactory.getLogger(ServerInfoUtils.class);
