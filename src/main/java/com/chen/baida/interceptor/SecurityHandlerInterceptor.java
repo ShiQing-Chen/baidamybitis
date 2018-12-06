@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * 登录检查拦截器
  *
- * @author : HanHongmin
+ * @author ShiQing_Chen 2018-12-06
  * @since 0.0.1
  */
 public class SecurityHandlerInterceptor extends HandlerInterceptorAdapter {
