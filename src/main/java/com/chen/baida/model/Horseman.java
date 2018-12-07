@@ -14,6 +14,12 @@ public class Horseman {
     /** 骑手id */
     private String id;
 
+    /** 用户的唯一标识 */
+    private String openid;
+
+    /** 用户id */
+    private String userId;
+
     /** 骑手名字 */
     private String manName;
 
@@ -43,6 +49,9 @@ public class Horseman {
 
     /** 登录密码 */
     private String manPassword;
+
+    /** 创建人id */
+    private String creatorId;
 
     /** 假删除 0未删除 1删除 */
     private String isDeleted;

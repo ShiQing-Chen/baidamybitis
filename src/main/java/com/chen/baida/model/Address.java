@@ -1,6 +1,7 @@
 package com.chen.baida.model;
 
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 
@@ -22,6 +23,12 @@ public class Address {
     /** 订单id */
     private String orderId;
 
+    /** 收货人姓名 */
+    private String receiverName;
+
+    /** 收货人电话 */
+    private String receiverPhone;
+
     /** 省 */
     private String addressProvince;
 
@@ -38,10 +45,13 @@ public class Address {
     private String addresssDetail;
 
     /** 经度 */
-    private String longitude;
+    private BigDecimal longitude;
 
     /** 纬度 */
-    private String latitude;
+    private BigDecimal latitude;
+
+    /** 创建人id */
+    private String creatorId;
 
     /** 假删除 0未删除 1删除 */
     private String isDeleted;

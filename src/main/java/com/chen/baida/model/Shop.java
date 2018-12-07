@@ -54,6 +54,9 @@ public class Shop {
     /** 店铺地址纬度 */
     private BigDecimal latitude;
 
+    /** 创建人id */
+    private String creatorId;
+
     /** 假删除 0未删除 1删除 */
     private String isDeleted;
 

@@ -14,6 +14,12 @@ public class Admin {
     /** 管理员id */
     private String id;
 
+    /** 用户的唯一标识 */
+    private String openid;
+
+    /** 用户id */
+    private String userId;
+
     /** 管理员名称 */
     private String adminName;
 
@@ -28,6 +34,9 @@ public class Admin {
 
     /** 管理员描述 */
     private String adminDesc;
+
+    /** 创建人id */
+    private String creatorId;
 
     /** 假删除 0未删除 1删除 */
     private String isDeleted;

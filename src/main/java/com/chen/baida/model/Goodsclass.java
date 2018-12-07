@@ -28,6 +28,9 @@ public class Goodsclass {
     /** 类别描述 */
     private String classDesc;
 
+    /** 创建人id */
+    private String creatorId;
+
     /** 假删除 0未删除 1删除 */
     private String isDeleted;
 

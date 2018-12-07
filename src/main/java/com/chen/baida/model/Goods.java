@@ -45,6 +45,9 @@ public class Goods {
     /** 折扣 折扣 默认为1 不打折*/
     private Double goodsDiscount;
 
+    /** 创建人id */
+    private String creatorId;
+
     /** 假删除 0未删除 1删除 */
     private String isDeleted;
 
