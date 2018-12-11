@@ -1,4 +1,4 @@
-package com.chen.baida.service.Impl;
+package com.chen.baida.service.impl;
 
 
 import com.chen.baida.service.HorsemanService;

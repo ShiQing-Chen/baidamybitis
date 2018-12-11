@@ -6,12 +6,11 @@ import java.util.Date;
 
 
 /**
+ *
+ * 地址
  * @author ShiQing_Chen
  * @date 2018/11/26 12:01
  */
-
-
-/** 地址 */
 public class Address {
 
     /** 地址id */

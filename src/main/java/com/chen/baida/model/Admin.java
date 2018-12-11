@@ -4,11 +4,11 @@ package com.chen.baida.model;
 import java.util.Date;
 
 /**
+ *
+ * 管理员
  * @author ShiQing_Chen
  * @date 2018/12/3 17:53
  */
-
-/** 管理员 */
 public class Admin {
 
     /** 管理员id */

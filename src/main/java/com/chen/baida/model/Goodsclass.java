@@ -3,11 +3,11 @@ package com.chen.baida.model;
 import java.util.Date;
 
 /**
+ *
+ * 菜单类别表
  * @author ShiQing_Chen
  * @date 2018/11/26 12:01
  */
-
-/** 菜单类别表 */
 public class Goodsclass {
 
     /** 菜单类别id */

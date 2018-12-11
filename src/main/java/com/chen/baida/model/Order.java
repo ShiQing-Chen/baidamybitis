@@ -4,11 +4,11 @@ import java.util.Date;
 
 
 /**
+ *
+ * 订单
  * @author ShiQing_Chen
  * @date 2018/11/26 12:01
  */
-
-/** 订单 */
 public class Order {
 
     /** 订单id */

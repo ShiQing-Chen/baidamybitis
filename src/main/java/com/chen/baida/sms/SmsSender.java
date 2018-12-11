@@ -175,7 +175,9 @@ public class SmsSender {
     }
 
 
-    //======================================
+    /**
+     * ======================================
+     */
     private byte[] encryptRequest(BaseRequest request){
         try {
             ObjectMapper om = ObjectMapperFactory.getSimpleMapper();

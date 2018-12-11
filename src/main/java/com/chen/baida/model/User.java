@@ -4,12 +4,11 @@ import java.util.Date;
 
 
 /**
+ *
+ * 用户
  * @author ShiQing_Chen
  * @date 2018/11/26 12:01
  */
-
-
-/** 用户 */
 public class User {
 
     /**

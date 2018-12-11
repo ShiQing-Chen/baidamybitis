@@ -4,11 +4,11 @@ package com.chen.baida.model;
 import java.util.Date;
 
 /**
+ *
+ * 骑手
  * @author ShiQing_Chen
  * @date 2018/12/4 14:24
  */
-
-/** 骑手 */
 public class Horseman {
 
     /** 骑手id */

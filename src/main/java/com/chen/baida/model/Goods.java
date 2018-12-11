@@ -4,12 +4,11 @@ import java.util.Date;
 
 
 /**
+ *
+ * 商品
  * @author ShiQing_Chen
  * @date 2018/11/26 12:01
  */
-
-
-/** 商品 */
 public class Goods {
 
     /** 商品id */

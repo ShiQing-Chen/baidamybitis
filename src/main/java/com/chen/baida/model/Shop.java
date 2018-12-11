@@ -5,11 +5,12 @@ import java.util.Date;
 
 
 /**
+ *
+ * 店铺
  * @author ShiQing_Chen
  * @date 2018/11/26 12:01
  */
-
-/** 店铺 */
+@SuppressWarnings("ALL")
 public class Shop {
 
     /** 店铺id */

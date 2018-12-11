@@ -13,12 +13,14 @@ import org.springframework.web.method.support.ModelAndViewContainer;
  */
 public class SharedUserArgumentResolver implements HandlerMethodArgumentResolver {
 
+	@Override
 	public boolean supportsParameter(MethodParameter parameter) {
 		return SharedUser.class.isAssignableFrom(parameter.getParameterType());
 	}
 
+	@Override
 	public Object resolveArgument(MethodParameter parameter, ModelAndViewContainer modelAndViewContainer,
-                                  NativeWebRequest request, WebDataBinderFactory binderFactory) throws Exception {
+								  NativeWebRequest request, WebDataBinderFactory binderFactory) throws Exception {
 		return SessionUtils.getCurUser(request);
 	}
 

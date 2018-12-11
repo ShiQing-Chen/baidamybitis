@@ -3,12 +3,10 @@ package com.chen.baida.model;
 import java.util.Date;
 
 /**
+ * 订单详情
  * @author ShiQing_Chen
  * @date 2018/11/26 12:01
  */
-
-
-/** 订单详情 */
 public class Orderitem {
 
     /** 订单详情id */
