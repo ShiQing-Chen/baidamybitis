@@ -92,50 +92,50 @@
             text :"正在加载数据"
         });
 
-        $.get("<@spring.url '/backend/chartSignIn'/>", function (response) {
-                    console.log(response);
-                    var data = response.data;
-                    var xData = [];
-                    var sData = [];
-                    for(var i = 0;i< data.length;i++){
-                        var d = data[i];
-                        xData.push(d.key);
-                        sData.push(d.num);
-                    }
+        <#--$.get("<@spring.url '/backend/chartSignIn'/>", function (response) {-->
+                    <#--console.log(response);-->
+                    <#--var data = response.data;-->
+                    <#--var xData = [];-->
+                    <#--var sData = [];-->
+                    <#--for(var i = 0;i< data.length;i++){-->
+                        <#--var d = data[i];-->
+                        <#--xData.push(d.key);-->
+                        <#--sData.push(d.num);-->
+                    <#--}-->
 
-                    if (response.success) {
-                        console.log(response);
-                        chartTotal.hideLoading();
-                        var option = {
-                            xAxis: {
-                                name: '小时时刻',
-                                type: 'category',
-                                boundaryGap: false,
-                                data: xData
-                            },
-                            yAxis: {
-                                name: '人数',
-                                type: 'value'
-                            },
-                            series: [{
-                                data: sData,
-                                type: 'line',
-                                areaStyle: {}
-                            }],
-                            tooltip: {
-                                formatter: function (params) {
-                                    return "截止今日"+ params.name + ":00点共累计签到" + params.value + "人";
-                                }
-                            }
-                        };
+                    <#--if (response.success) {-->
+                        <#--console.log(response);-->
+                        <#--chartTotal.hideLoading();-->
+                        <#--var option = {-->
+                            <#--xAxis: {-->
+                                <#--name: '小时时刻',-->
+                                <#--type: 'category',-->
+                                <#--boundaryGap: false,-->
+                                <#--data: xData-->
+                            <#--},-->
+                            <#--yAxis: {-->
+                                <#--name: '人数',-->
+                                <#--type: 'value'-->
+                            <#--},-->
+                            <#--series: [{-->
+                                <#--data: sData,-->
+                                <#--type: 'line',-->
+                                <#--areaStyle: {}-->
+                            <#--}],-->
+                            <#--tooltip: {-->
+                                <#--formatter: function (params) {-->
+                                    <#--return "截止今日"+ params.name + ":00点共累计签到" + params.value + "人";-->
+                                <#--}-->
+                            <#--}-->
+                        <#--};-->
 
-                        chartTotal.setOption(option);
-                    } else {
-                        $.toast(response.message, 'danger');
-                    }
-                },
-                "json"
-        );
+                        <#--chartTotal.setOption(option);-->
+                    <#--} else {-->
+                        <#--$.toast(response.message, 'danger');-->
+                    <#--}-->
+                <#--},-->
+                <#--"json"-->
+        <#--);-->
 
     });
 </script>

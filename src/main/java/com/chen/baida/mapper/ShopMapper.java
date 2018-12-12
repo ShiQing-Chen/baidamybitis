@@ -3,10 +3,8 @@ package com.chen.baida.mapper;
 import com.chen.baida.form.UpdateShopForm;
 import com.chen.baida.model.Shop;
 import com.chen.baida.vo.SearchShopParam;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.SelectProvider;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -15,8 +13,10 @@ import java.util.List;
  * @Description //TODO
  * @date 2018/12/6 22:35
  */
-
+@Mapper
+@Repository
 public interface ShopMapper {
+
     @SelectProvider(type = ShopProvider.class, method = "searchShop")
     List<Shop> searchShop(SearchShopParam params);
 

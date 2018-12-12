@@ -113,9 +113,6 @@
     <div class="content-center">
         <div class="bg-img">
             <img src="<@spring.url '/image/index/index-backdrop.png'/>" style="width: 100%;">
-            <#--<div class="title-img">-->
-                <#--<img src="<@spring.url '/image/index/banner-title.png'/>" style="height: 100%;">-->
-            <#--</div>-->
         </div>
         <div class="login-block">
             <label class="title">登录</label>

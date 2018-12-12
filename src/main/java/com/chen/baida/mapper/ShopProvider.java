@@ -16,7 +16,7 @@ public class ShopProvider {
      * @return sql
      */
     @SuppressWarnings("unused")
-    public String searchActivity(SearchShopParam params){
+    public String searchShop(SearchShopParam params){
         String sql = "select * from shop s where s.is_deleted = false ";
         if(StringUtils.isNotBlank(params.getSearch())){
             sql = sql + " and s.shop_name like CONCAT('%',#{search},'%') ";
@@ -26,11 +26,11 @@ public class ShopProvider {
     }
 
     @SuppressWarnings("unused")
-    public String countActivity(SearchShopParam params){
+    public String countShop(SearchShopParam params){
         String sql = "select count(*) from shop s where s.is_deleted = false ";
-        if(StringUtils.isNotBlank(params.getSearch())){
-            sql = sql + " and s.shop_name like CONCAT('%',#{search},'%') ";
-        }
+//        if(StringUtils.isNotBlank(params.getSearch())){
+//            sql = sql + " and s.shop_name like CONCAT('%',#{search},'%') ";
+//        }
         return sql;
     }
 }

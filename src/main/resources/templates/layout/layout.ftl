@@ -96,11 +96,16 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">系统菜单</li>
-                <li><a href="<@spring.url '/dashboard'/>"><i class="fa fa-dashboard"></i> <span>系统面板</span></a></li>
-                <li><a href="<@spring.url '/backend/activity'/>"><i class="fa fa-laptop" aria-hidden="true"></i> <span>活动管理</span></a></li>
-                <li><a href="<@spring.url '/backend/topic'/>"><i class="fa fa-envira" aria-hidden="true"></i> <span>主题管理</span></a></li>
-                <li><a href="<@spring.url '/backend/feedback'/>"><i class="fa fa-heart" aria-hidden="true"></i> <span>反馈管理</span></a></li>
-                <li><a href="<@spring.url '/backend/checkIn'/>"><i class="glyphicon glyphicon-copy" aria-hidden="true"></i> <span>签到查询</span></a></li>
+                <li><a href="<@spring.url '/dashboard'/>"><i class="fa fa-desktop"></i> <span>系统面板</span></a></li>
+                <li><a href="<@spring.url '/shop/shopList'/>"><i class="fa fa-th-large" aria-hidden="true"></i> <span>商铺管理</span></a></li>
+                <li><a href="<@spring.url '/backend/topic'/>"><i class="fa fa-dedent" aria-hidden="true"></i> <span>菜单管理</span></a></li>
+                <li><a href="<@spring.url '/backend/topic'/>"><i class="fa fa-shopping-bag" aria-hidden="true"></i> <span>商品管理</span></a></li>
+                <li><a href="<@spring.url '/backend/feedback'/>"><i class="fa fa-heart" aria-hidden="true"></i> <span>活动管理</span></a></li>
+                <li><a href="<@spring.url '/backend/checkIn'/>"><i class="fa fa-reorder" aria-hidden="true"></i> <span>订单管理</span></a></li>
+                <li><a href="<@spring.url '/backend/checkIn'/>"><i class="fa fa-map-marker" aria-hidden="true"></i> <span>地址管理</span></a></li>
+                <li><a href="<@spring.url '/backend/checkIn'/>"><i class="fa fa-user" aria-hidden="true"></i> <span>用户管理</span></a></li>
+                <li><a href="<@spring.url '/backend/checkIn'/>"><i class="fa fa-user-secret" aria-hidden="true"></i> <span>管理员管理</span></a></li>
+                <li><a href="<@spring.url '/backend/checkIn'/>"><i class="fa fa-motorcycle" aria-hidden="true"></i> <span>骑手管理</span></a></li>
             </ul>
         </section>
         <!-- /.sidebar -->
