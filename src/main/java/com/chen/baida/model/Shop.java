@@ -16,7 +16,7 @@ public class Shop {
     /** 店铺id */
     private String id;
 
-    /** 店铺名字 */
+    /** 店铺名称 */
     private String shopName;
 
     /** 店铺地址 */
