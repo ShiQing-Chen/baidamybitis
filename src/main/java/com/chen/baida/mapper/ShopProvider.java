@@ -11,7 +11,7 @@ import org.apache.commons.lang3.StringUtils;
 public class ShopProvider {
 
     /**
-     * 为Mapper 的listActivity 方法生成动态sql
+     * 为Mapper 的listShop 方法生成动态sql
      * @param params 页面传过来的参数
      * @return sql
      */
@@ -28,9 +28,9 @@ public class ShopProvider {
     @SuppressWarnings("unused")
     public String countShop(SearchShopParam params){
         String sql = "select count(*) from shop s where s.is_deleted = false ";
-//        if(StringUtils.isNotBlank(params.getSearch())){
-//            sql = sql + " and s.shop_name like CONCAT('%',#{search},'%') ";
-//        }
+        if(StringUtils.isNotBlank(params.getSearch())){
+            sql = sql + " and s.shop_name like CONCAT('%',#{search},'%') ";
+        }
         return sql;
     }
 }

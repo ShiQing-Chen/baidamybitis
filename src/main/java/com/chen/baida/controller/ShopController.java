@@ -27,6 +27,7 @@ import java.util.Set;
 @Controller
 public class ShopController {
     private static final Logger LOGGER = LoggerFactory.getLogger(ShopController.class);
+
     private final ShopService shopService;
 
     @Autowired
@@ -39,13 +40,6 @@ public class ShopController {
      */
     @RequestMapping(value = "/shop/shopList")
     public String activity(Device device, Model model){
-//        Set<String> runEvn = Sets.newHashSet(environment.getActiveProfiles());
-//        if(runEvn.contains("prod")){
-//            model.addAttribute("qrUrlBase",qrUrlBase);
-//        }else{
-//            String devBaseUrl = "http://"+ ServerInfoUtils.getServerIp()+":"+serverPort;
-//            model.addAttribute("qrUrlBase",devBaseUrl);
-//        }
         return "/shop/shopList";
     }
 
@@ -57,9 +51,9 @@ public class ShopController {
     public Map<String,Object> searchActivity(@RequestBody SearchShopParam params){
         Map<String,Object> map = Maps.newHashMap();
         Long total = shopService.countShop(params);
-//        List<Shop> data = shopService.searchShop(params);
+        List<Shop> data = shopService.searchShop(params);
         map.put("total",total);
-        map.put("rows","");
+        map.put("rows",data);
         return map;
     }
 }

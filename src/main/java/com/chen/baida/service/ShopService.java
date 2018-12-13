@@ -17,8 +17,7 @@ import java.util.List;
  * @date 2018/11/26 16:41
  */
 
-@Mapper
-@Repository
+
 public interface ShopService {
 
     List<Shop> searchShop(SearchShopParam params);

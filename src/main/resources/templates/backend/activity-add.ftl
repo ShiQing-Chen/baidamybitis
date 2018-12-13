@@ -18,7 +18,7 @@
 <section class="content">
     <div class="box">
         <div class="box-body">
-            <form class="form-horizontal" id="form-add" action="<@spring.url '/backend/doAddActivity'/>" method="post">
+            <form class="form-horizontal" id="form-show" action="'/>" method="post">
                 <div class="form-group">
                     <label for="input-act-name" class="col-sm-2 control-label">活动名称</label>
                     <div class="col-sm-8">

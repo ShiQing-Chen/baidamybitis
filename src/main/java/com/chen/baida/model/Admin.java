@@ -39,7 +39,7 @@ public class Admin {
     private String creatorId;
 
     /** 假删除 0未删除 1删除 */
-    private String isDeleted;
+    private Boolean isDeleted;
 
     /** 创建时间 */
     private Date createTime;
